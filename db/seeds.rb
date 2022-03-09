@@ -11,5 +11,4 @@ product.save
 product = Product.new(name: "banana", price: 1, image_url: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg", description: "a banana to eat")
 product.save
 
-product = Product.new(name: "pants", price: 1, image_url: "https://media.wired.com/photos/611c5312798f0e2c853b702f/125:94/w_1274,h_958,c_limit/Gear-Cargo-Pants-are-Back-1302952122.jpg", description: "pants... for when you need to wear pants")
-product.save
+Product.create(name: "pants", price: 1, image_url: "https://media.wired.com/photos/611c5312798f0e2c853b702f/125:94/w_1274,h_958,c_limit/Gear-Cargo-Pants-are-Back-1302952122.jpg", description: "pants... for when you need to wear pants")
