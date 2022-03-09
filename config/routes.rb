@@ -6,4 +6,10 @@ Rails.application.routes.draw do
 
 get "/products", controller: "products", action: "products_method"
 
+get "/ps5", controller: "products", action: "ps5"
+
+get "/banana", controller: "products", action: "banana"
+
+get "/pants", controller: "products", action: "pants"
+
 end
