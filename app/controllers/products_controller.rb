@@ -37,7 +37,12 @@ class ProductsController < ApplicationController
   def find_products
     product = params[:find]
     display = Product.find_by(name: product)
+    render json: display.as_json
   end
 
+  def body_params
+    input_value = params[:secret_info]
+    render json: {message: }
+  end
 
 end

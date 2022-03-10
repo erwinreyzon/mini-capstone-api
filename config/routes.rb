@@ -18,4 +18,6 @@ get "/search" => "products#search_products"
 
 get "/find/:find" => "products#find_products"
 
+post "/body_params" => "products#body_params"
+
 end
