@@ -14,4 +14,8 @@ get "/banana", controller: "products", action: "banana"
 
 get "/pants", controller: "products", action: "pants"
 
+get "/search" => "products#search_products"
+
+get "/find/:find" => "products#find_products"
+
 end

@@ -28,4 +28,16 @@ class ProductsController < ApplicationController
 
   end
 
+  def search_products
+    product = params[:input]
+    display = Product.find_by(name: product)
+    render json: display.as_json
+  end
+
+  def find_products
+    product = params[:find]
+    display = Product.find_by(name: product)
+  end
+
+
 end
