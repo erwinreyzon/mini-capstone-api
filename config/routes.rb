@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
 # get "/products", controller: "products", action: "products_method"
 # same as above
-get "/products" => "products#products_method"
+get "/products" => "products#index"
 
 get "/ps5", controller: "products", action: "ps5"
 
@@ -16,7 +16,7 @@ get "/pants", controller: "products", action: "pants"
 
 get "/search" => "products#search_products"
 
-get "/find/:find" => "products#find_products"
+get "/products/:id" => "products#show"
 
 post "/body_params" => "products#body_params"
 

@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
 
-  def products_method
+  def index
 
     products = Product.all
     render json: products.as_json
@@ -34,15 +34,16 @@ class ProductsController < ApplicationController
     render json: display.as_json
   end
 
-  def find_products
-    product = params[:find]
-    display = Product.find_by(name: product)
+  def show
+    product_id = params[:id]
+    display = Product.find_by(id: product_id)
     render json: display.as_json
   end
 
-  def body_params
-    input_value = params[:secret_info]
-    render json: {message: }
-  end
+  #not working, fix
+  # def body_params
+  #   input_value = params[:secret_info]
+  #   render json: {message: }
+  # end
 
 end
