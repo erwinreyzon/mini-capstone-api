@@ -10,16 +10,18 @@ get "/products" => "products#index"
 
 post "/products" => "products#create"
 
-get "/ps5", controller: "products", action: "ps5"
+patch "/products/:id" => "products#update"
 
-get "/banana", controller: "products", action: "banana"
+# get "/ps5", controller: "products", action: "ps5"
 
-get "/pants", controller: "products", action: "pants"
+# get "/banana", controller: "products", action: "banana"
 
-get "/search" => "products#search_products"
+# get "/pants", controller: "products", action: "pants"
+
+# get "/search" => "products#search_products"
 
 get "/products/:id" => "products#show"
 
-post "/body_params" => "products#body_params"
+# post "/body_params" => "products#body_params"
 
 end

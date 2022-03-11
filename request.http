@@ -1,3 +1,10 @@
+### Index request
+GET http://localhost:3000/products
+
+### Show request
+GET http://localhost:3000/products/2
+
+### POST request
 POST http://localhost:3000/products
 Content-Type: application/json
 
@@ -6,4 +13,12 @@ Content-Type: application/json
   "price": 50,
   "image_url": "chair.com",
   "description": "an item to sit on"
+}
+
+### Patch (update) request
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "price": 2000
 }
