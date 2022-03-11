@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 # same as above
 get "/products" => "products#index"
 
+post "/products" => "products#create"
+
 get "/ps5", controller: "products", action: "ps5"
 
 get "/banana", controller: "products", action: "banana"

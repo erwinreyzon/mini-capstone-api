@@ -1,0 +1,9 @@
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "chair",
+  "price": 50,
+  "image_url": "chair.com",
+  "description": "an item to sit on"
+}

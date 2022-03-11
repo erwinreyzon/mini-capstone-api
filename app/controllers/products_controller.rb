@@ -7,32 +7,32 @@ class ProductsController < ApplicationController
 
   end
 
-  def ps5
+  # def ps5
 
-    ps5 = Product.first
-    render json: ps5.as_json
+  #   ps5 = Product.first
+  #   render json: ps5.as_json
     
-  end
+  # end
 
-  def banana
+  # def banana
 
-    banana = Product.second
-    render json: banana.as_json
+  #   banana = Product.second
+  #   render json: banana.as_json
     
-  end
+  # end
 
-  def pants
+  # def pants
     
-    pants = Product.third
-    render json: pants.as_json
+  #   pants = Product.third
+  #   render json: pants.as_json
 
-  end
+  # end
 
-  def search_products
-    product = params[:input]
-    display = Product.find_by(name: product)
-    render json: display.as_json
-  end
+  # def search_products
+  #   product = params[:input]
+  #   display = Product.find_by(name: product)
+  #   render json: display.as_json
+  # end
 
   def show
     product_id = params[:id]
@@ -45,5 +45,16 @@ class ProductsController < ApplicationController
   #   input_value = params[:secret_info]
   #   render json: {message: }
   # end
+
+  def create
+    product = Product.new(
+      name: params["name"],
+      price: params["price"],
+      image_url: params["image_url"],
+      description: params["description"]
+    )
+    product.save
+    render json: product.as_json
+  end
 
 end
