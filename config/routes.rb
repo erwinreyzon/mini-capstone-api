@@ -12,6 +12,8 @@ post "/products" => "products#create"
 
 patch "/products/:id" => "products#update"
 
+delete "/products/:id" => "products#destroy"
+
 # get "/ps5", controller: "products", action: "ps5"
 
 # get "/banana", controller: "products", action: "banana"
