@@ -1,5 +1,5 @@
 require "http"
-require "/app/controllers/products.controller.rb"
+require "/app/controllers/products_controller.rb"
 
 response = HTTP.get("http://localhost:3000/products")
 
