@@ -4,14 +4,14 @@ GET http://localhost:3000/products
 ### Show request
 GET http://localhost:3000/products/2
 
-### POST request
+### POST request (create new product)
 POST http://localhost:3000/products
 Content-Type: application/json
 
 {
   "name": "chair",
   "price": 50,
-  "image_url": "chair.com",
+  "image_url": "https://m.media-amazon.com/images/I/41tCIsGV8UL.jpg",
   "description": "an item to sit on"
 }
 
@@ -23,6 +23,6 @@ Content-Type: application/json
   "price": 2000
 }
 
-### Destroy request
+### Destroy request (delete product)
 DELETE http://localhost:3000/products/6
 Content-Type: application/json
