@@ -55,7 +55,8 @@ class ProductsController < ApplicationController
       description: params["description"]
     )
     product.save
-    render json: product.as_json
+    @product = product
+    render template: "products/show"
   end
 
   def update
@@ -66,7 +67,8 @@ class ProductsController < ApplicationController
     product.image_url = params["image_url"] || product.image_url
     product.description = params["description"] || product.description
     product.save
-    render json: product.as_json
+    @product = product
+    render template: "products/show"
   end
 
   def destroy

@@ -5,22 +5,22 @@ GET http://localhost:3000/products.json
 GET http://localhost:3000/products/2.json
 
 ### POST request (create new product)
-POST http://localhost:3000/products
+POST http://localhost:3000/products.json
 Content-Type: application/json
 
 {
-  "name": "chair",
-  "price": 50,
-  "image_url": "https://m.media-amazon.com/images/I/41tCIsGV8UL.jpg",
-  "description": "an item to sit on"
+  "name": "shoe",
+  "price": 74,
+  "image_url": "https://media.wired.com/photos/60149f34056378f4af9cf9f1/191:100/w_2580,c_limit/Gear-Topo-Athletic-Ultraventure-Pro.jpg",
+  "description": "feet covers"
 }
 
 ### Patch (update) request
-PATCH http://localhost:3000/products/1
+PATCH http://localhost:3000/products/1.json
 Content-Type: application/json
 
 {
-  "price": 2000
+  "price": 250
 }
 
 ### Destroy request (delete product)
