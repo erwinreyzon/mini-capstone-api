@@ -20,7 +20,7 @@ PATCH http://localhost:3000/products/1.json
 Content-Type: application/json
 
 {
-  "price": 250
+  "price": 400
 }
 
 ### Destroy request (delete product)
