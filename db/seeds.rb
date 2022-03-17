@@ -13,6 +13,6 @@
 
 # Product.create(name: "pants", price: 1, image_url: "https://media.wired.com/photos/611c5312798f0e2c853b702f/125:94/w_1274,h_958,c_limit/Gear-Cargo-Pants-are-Back-1302952122.jpg", description: "pants... for when you need to wear pants")
 
-Supplier.create(name: "Circle Enix", email: "circleenix@example.com", phone_number: "555-1234")
-Supplier.create(name: "Skyport", email: "skyport@example.com", phone_number: "555-9876")
-Supplier.create(name: "Zone Ama", email: "zoneama@example.com", phone_number: "515-0506")
+# Supplier.create(name: "Circle Enix", email: "circleenix@example.com", phone_number: "555-1234")
+# Supplier.create(name: "Skyport", email: "skyport@example.com", phone_number: "555-9876")
+# Supplier.create(name: "Zone Ama", email: "zoneama@example.com", phone_number: "515-0506")

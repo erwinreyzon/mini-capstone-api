@@ -70,6 +70,7 @@ class ProductsController < ApplicationController
     product.image_url = params["image_url"] || product.image_url
     product.description = params["description"] || product.description
     @product = product
+    product.supplier_id = params["supplier_id"] || product.supplier_id
     if product.save
       render template: "products/show"
     else

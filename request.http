@@ -16,11 +16,11 @@ Content-Type: application/json
 }
 
 ### Patch (update) request
-PATCH http://localhost:3000/products/1.json
+PATCH http://localhost:3000/products/10.json
 Content-Type: application/json
 
 {
-  "price": 550
+  "supplier_id": 2
 }
 
 ### Destroy request (delete product)
