@@ -26,4 +26,10 @@ get "/products/:id" => "products#show"
 
 # post "/body_params" => "products#body_params"
 
+get "suppliers" => "suppliers#index"
+
+get "suppliers/:id" => "suppliers#show"
+
+post "suppliers" => "suppliers#create"
+
 end
