@@ -9,10 +9,11 @@ POST http://localhost:3000/products.json
 Content-Type: application/json
 
 {
-  "name": "shoe",
-  "price": 74,
-  "image_url": "https://media.wired.com/photos/60149f34056378f4af9cf9f1/191:100/w_2580,c_limit/Gear-Topo-Athletic-Ultraventure-Pro.jpg",
-  "description": "feet covers"
+  "name": "xbox 51",
+  "price": 1000,
+  "image_url": "xbox.com",
+  "description": "51st kind of this gaming console",
+  "supplier_id": 1
 }
 
 ### Patch (update) request
