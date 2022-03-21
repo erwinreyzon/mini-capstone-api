@@ -21,7 +21,7 @@ PATCH http://localhost:3000/products/10.json
 Content-Type: application/json
 
 {
-  "supplier_id": 2
+  "url": ["https://i5.walmartimages.com/asr/fd596ed4-bf03-4ecb-a3b0-7a9c0067df83.bb8f535c7677cebdd4010741c6476d3a.png"]
 }
 
 ### Destroy request (delete product)
