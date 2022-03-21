@@ -4,6 +4,7 @@
   price: @product.price,
   url: @product.url,
   description: @product.description,
+  images: @product.images,
   is_discounted?: @product.is_discounted?,
   tax: @product.tax,
   total: @product.total,
