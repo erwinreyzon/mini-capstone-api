@@ -32,4 +32,6 @@ get "suppliers/:id" => "suppliers#show"
 
 post "suppliers" => "suppliers#create"
 
+post "/users" => "users#create"
+
 end
