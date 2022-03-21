@@ -3,7 +3,6 @@
     id: product.id,
     name: product.name,
     price: product.price,
-    url: product.url,
     description: product.description,
     is_discounted?: product.is_discounted?,
     tax: product.tax,
