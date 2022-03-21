@@ -36,4 +36,10 @@ post "/users" => "users#create" #creates a login
 
 post "/sessions" => "sessions#create" #creates a logiin session
 
+get "orders" => "orders#index"
+
+get "orders/:id" => "orders#show"
+
+post "orders" => "orders#create"
+
 end
