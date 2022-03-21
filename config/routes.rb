@@ -32,6 +32,8 @@ get "suppliers/:id" => "suppliers#show"
 
 post "suppliers" => "suppliers#create"
 
-post "/users" => "users#create"
+post "/users" => "users#create" #creates a login
+
+post "/sessions" => "sessions#create" #creates a logiin session
 
 end

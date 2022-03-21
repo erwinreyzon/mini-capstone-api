@@ -38,3 +38,12 @@ Content-Type: application/json
   "password": "purple",
   "password_confirmation": "purple"
 }
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "erwin@example.com",
+  "password": "password"
+}
