@@ -2,8 +2,8 @@ class OrdersController < ApplicationController
 
   def index
     # orders = Order.all
-    orders = current_user.orders
-    render json: orders.as_json
+      orders = current_user.orders
+      render json: orders.as_json
   end
 
   def show
