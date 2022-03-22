@@ -52,7 +52,6 @@ class ProductsController < ApplicationController
     product = Product.new(
       name: params["name"],
       price: params["price"],
-      url: params["url"],
       description: params["description"],
       supplier_id: params["supplier_id"]
     )
@@ -69,7 +68,6 @@ class ProductsController < ApplicationController
     product = Product.find_by(id: product_id)
     product.name = params["name"] || product.name
     product.price = params["price"] || product.price
-    product.url = params["url"] || product.url
     product.description = params["description"] || product.description
     @product = product
     product.supplier_id = params["supplier_id"] || product.supplier_id
