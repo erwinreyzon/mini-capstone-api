@@ -51,9 +51,11 @@ Content-Type: application/json
 
 ### Order index
 GET http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwNjE3MDR9.cctp4EcAaLDgAXWeEIx_Vk9kacf3qY4ucUsJRN2rWOU
 
 ### Order show
 GET http://localhost:3000/orders/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwNjE3MDR9.cctp4EcAaLDgAXWeEIx_Vk9kacf3qY4ucUsJRN2rWOU
 
 ### Order create
 POST http://localhost:3000/orders
