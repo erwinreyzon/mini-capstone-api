@@ -7,11 +7,9 @@ Rails.application.routes.draw do
 # get "/products", controller: "products", action: "products_method"
 # same as above
 get "/products" => "products#index"
-
+get "/products/:id" => "products#show"
 post "/products" => "products#create"
-
 patch "/products/:id" => "products#update"
-
 delete "/products/:id" => "products#destroy"
 
 # get "/ps5", controller: "products", action: "ps5"
@@ -22,24 +20,19 @@ delete "/products/:id" => "products#destroy"
 
 # get "/search" => "products#search_products"
 
-get "/products/:id" => "products#show"
-
 # post "/body_params" => "products#body_params"
 
 get "suppliers" => "suppliers#index"
-
 get "suppliers/:id" => "suppliers#show"
-
 post "suppliers" => "suppliers#create"
 
 post "/users" => "users#create" #creates a login
-
 post "/sessions" => "sessions#create" #creates a logiin session
 
 get "orders" => "orders#index"
-
 get "orders/:id" => "orders#show"
-
 post "orders" => "orders#create"
+
+post "/carted_products" => "carted_products#create"
 
 end
