@@ -79,6 +79,10 @@ Authorization: Bearer {{jwt}}
   "total": 1090
 }
 
+### Carted Products index for current user
+GET http://localhost:3000/carted_products
+Authorization: Bearer {{jwt}}
+
 ### Carted Products create
 POST http://localhost:3000/carted_products
 Content-Type: application/json
